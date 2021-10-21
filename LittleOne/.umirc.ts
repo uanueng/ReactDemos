@@ -6,7 +6,14 @@ export default defineConfig({
   },
   // layout:{},
   routes: [
-    { path: '/', component: '@/pages/index' },
+    { path: '/', component: '@/layouts/home/index',
+      routes:[
+        {
+          path:'/',
+          component:'@/pages/index'
+        }
+      ]
+    },
   ],
   fastRefresh: {},
 });

@@ -9,12 +9,13 @@ class HomeLayout extends React.Component {
 
         </div>
         <div className={styles.content}>
-          {this.children}
+          {this.props.children}
         </div>
         <div className={styles.footer}>
-          uanueng ©
+          Created By Uanueng
         </div>
       </div>
     )
   }
 }
+export default HomeLayout;
