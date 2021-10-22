@@ -2,7 +2,7 @@ import { defineConfig } from 'umi';
 
 export default defineConfig({
   nodeModulesTransform: {
-    type: 'none',
+    type: 'all',
   },
   // layout:{},
   routes: [
